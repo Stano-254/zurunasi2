@@ -1,13 +1,9 @@
 @extends('layouts.frontend.app')
 
-@section('title','Water sports')
-
-
+@section('title','forests')
 
 @section('content')
     <div class="top_content">
-
-
         <div id="homepageSlide" class="carousel slide carousel-fade" data-interval="3500" data-ride="carousel">
             <div class="carousel-inner" style="height:420px;width:auto">
                 <ol class="carousel-indicators">
@@ -24,7 +20,7 @@
                 <div class="carousel-item active">
                     <img src="images/tour.jpg" class="d-block w-100 card-img-top  " alt="...">
                     <div class="carousel-caption">
-                        <h1> Our National Parks</h1>
+                        <h1> Our Marine life</h1>
                         <hr class="nav-hr">
                         <p class="text">get the best experience in company of natural nature </p>
                     </div>
@@ -92,137 +88,108 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
     </div>
     <div class="banner pt-2 pl-4">
-        <h1 class="display-4 ">Water Sports </h1>
+        <h1 class="display-4 ">Our Forests </h1>
     </div>
     <div class="p-4" style="background: #f7f9fa">
         <div class="container jumbotron-fluid">
-            <p class="disp_title">Kenya has a wide variety of fun water sports from scuba diving and snorkelling at the
-                Diani Beach , kitesurfing, jet skiing,white water rafting, Deep Sea Fishing to Boat riding. Kenya is
-                fully packed within exhilarating fun water activities you can enjoy</p>
+            <p class="disp_title">There's always somewhere new to enjoy, forests is filled with inspiring places to
+                visit and things to do. some created
+                by nature, others made by histroy.prepare to be educated and enchanted but never bored. </p>
         </div>
 
     </div>
 
     <div class="park-wrapper">
-        <h2 class="park-title">Diving</h2>
+        <h2 class="park-title">Kakamega Forest</h2>
         <div class="d-flex">
             <div class="content-img ">
-                <img class="img-thumbnail" src="images/watersport/DivingtheCrab.jpg" alt="Diving at Diani Beach"></div>
-            <div class="content ">
-                <p class="content-body"> Whether you are scuba divers during surface intervals, a family with children
-                    or a group of friends, water sports activities will allow you to explore the Kenyan Southern
-                    coastline, covering both sea and air. As you know, life around the kenyan coast revolves around the
-                    gorgeous warm water of the sea and the refreshing sea breeze..</p>
-                <a href="#demo" data-toggle="collapse">
-                    <button class="btn btn-outline-secondary mapbtn">view map</button>
-                </a>
-                <a href="{{'/watersports/diving'}}">
-                    <button class="btn btn-outline-secondary mapbtn">view more</button>
-                </a>
-                <div id="demo" class="collapse mt-3">
-                    <p> map for the area here....</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="park-wrapper">
-        <h2 class="park-title">Kite Surfing</h2>
-        <div class="d-flex">
-            <div class="content-img destination ">
-                <img class="img-thumbnail" src="images/watersport/kitesurf.jpg" alt="kite surfing at Diani beach ">
+                <img class="img-thumbnail" src="images/lakenakuruimg2.jpg" alt="Lake Nakuru image ">
 
             </div>
             <div class="content ">
-                <p class="content-body">An ever-growing sport, kitesurfing, which involves riding the waves with a board
-                    pulled by a kite, moved to Kenya and Zanzibar. In the northern part of the port city of Mombasa, the
-                    reef is more distant from the shore: its role as a natural protective barrier is reduced, therefore
-                    allowing the waves rolling towards the shore. If this is a small inconvenience for scuba diving,
-                    gliders and kite surfing will be more excited about the waves!</p>
-
+                <p class="content-body"> The park is located south of Malindi town extending to Mida creek. It neighbors
+                    the Gede ruins and Arabuko Sokoke forest.
+                    The park is enveloped by a national reserve and a 100ft strip of coastal land starting from
+                    Vasco-da-Gama pillar to Watamu. The reserve extends 3.5 nautical miles to seaward.
+                    The park is endowed with magnificent resources such as fringing reefs, coral, sea grass, mangroves,
+                    mudflats, high fish diversity, marine mammals, turtles and shorebirds.The fringing reef is close to
+                    shore and exposed during low tide, but drops gradually to a sea grass bed that descends
+                    precipitously to the deep Barracuda Channel.</p>
                 <a href="#demo" data-toggle="collapse">
                     <button class="btn btn-outline-secondary mapbtn">view map</button>
-                </a>
-                <a href="{{'./watersports/kitesurfing'}}">
-                    <button class="btn btn-outline-secondary mapbtn">view more</button>
                 </a>
                 <div id="demo" class="collapse mt-3">
                     <p> map for the area here....</p>
                 </div>
             </div>
         </div>
-
     </div>
-
     <div class="park-wrapper">
-        <h2 class="park-title">White Water Rafting</h2>
-        <div class="d-flex">
-            <div class="content-img destination ">
-                <img class="img-thumbnail" src="images/watersport/whiterafting.jpg" alt="Lake Nakuru image ">
-
-            </div>
-            <div class="content ">
-                <p class="content-body">Are you looking for an adventurous and relaxing day trip outside your normal
-                    daily activities? White water rafting is the best outdoor activity you can enjoy in Kenya.
-                    It’s usually done using an inflatable raft to navigate the white water or different degrees of rough
-                    water. White water rafting in Kenya began in 1990 and
-                    the activity has gained popularity over time.</p>
-                <a href="#demo" data-toggle="collapse">
-                    <button class="btn btn-outline-secondary mapbtn">view map</button>
-                </a>
-                <a href="{{'./watersports/watersport'}}">
-                    <button class="btn btn-outline-secondary mapbtn">view more</button>
-                </a>
-                <div id="demo" class="collapse mt-3">
-                    <p> map for the area here....</p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="park-wrapper">
-        <h2 class="park-title">Jet Skiing</h2>
-        <div class="d-flex">
-            <div class="content-img destination ">
-                <img class="img-thumbnail" src="images/laketurkananational.jpg" alt="Lake Nakuru image ">
-
-            </div>
-            <div class="content ">
-                <p class="content-body">Jet skiing is a high speed water sport that is great for developing your balance
-                    and coordination skills as well as your leg muscles.
-
-                    There are many great locations where you can get a great introduction to jet skiing. Of all the
-                    water sports, jet skiing is probably the easiest to pick up. It’s also probably the fastest, and
-                    it’s the
-                    adrenaline attached to that speed that attracts thousands of people to the sport.</p>
-
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="park-wrapper">
-        <h2 class="park-title">Boat Riding</h2>
+        <h2 class="park-title">Tsavo Forest</h2>
         <div class="d-flex">
             <div class="content-img destination ">
                 <img class="img-thumbnail" src="images/lakenakuruimg2.jpg" alt="Lake Nakuru image ">
 
             </div>
             <div class="content ">
-                <p class="content-body"> Lake Nakuru was first gazetted as a bird sanctuary in 1960 and upgraded to
-                    National Park status in 1968.The Park has Kenya’s largest population of rhinos. The surface of the
-                    Lake Nakuru occupies about a third of the park. It supports a dense bloom of the blue-green
-                    Cyanophyte Spirulina platensis
-                    from which it derives its colour and is a food source for flamingos.During peak
-                    season over millions of flamingos and Pelicans congregate on the lake.</p>
+                <p class="content-body"> Some of the best sites are in the Watamu Marine National Park- a well protected
+                    and managed area.
+                    The reef here is close to shore, meaning easily accessible shallow coral gardens that are ideal for
+                    learners and snorkelers.
+                    Whale Sharks pass through this year each year from October- February, with good sightings reported
+                    each day.Migratory pods of Whales from Southern Africa pass through this area
+                    during the months of June- September, and are often seen breaching in deep water beyond the
+                    reefs.The outer reef has some fine drop offs, with sheer walls, and large brain corals attracting
+                    consistently abundant sea life.
+                </p>
+                <div id="viewmorewatamu" class="collapse">
+                    <p class="content-body"> Dives on the central Turtle Reef average at around 10-15 meters, with high
+                        spiking coral heads attracting large shoals of colourful parrot and surgeon fish.You will
+                        occasionally sight a few white-tip reef sharks that are in residence on the reef.This area is an
+                        important egg laying site for the endangered Green sea Turtle,
+                        which lay on the beaches at Watamu several times a year, and they are often seen around this
+                        reef.Nearby Moray Reef has a breathtaking overhang dropping 28 metres to a sandy bottom.
+                        The coral here is a refuge for octopus and eel. The sharp reef edge has plenty of nudibranch,
+                        angel fish, tang, and the occasional grouper or barracuda.An excellent all round dive site is
+                        the Canyon, a long sandy channel at 28m, bordered on each side by deep drop-offs. There is an
+                        impressive arch covered with soft corals, and the reef walls are always alive with trevalies and
+                        snapper.
+                        Diving into the channel itself is a good way to find rays and reef sharks..</p>
+
+                </div>
+                <a href="#viewmorewatamu" data-toggle="collapse">
+                    <button class="btn btn-outline-secondary mapbtn">view more</button>
+                </a>
+                <a href="#demo" data-toggle="collapse">
+                    <button class="btn btn-outline-secondary mapbtn">view map</button>
+                </a>
+                <div id="demo" class="collapse mt-3">
+                    <p> map for the area here....</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="park-wrapper">
+        <h2 class="park-title">Malindi forest</h2>
+        <div class="d-flex">
+            <div class="content-img destination ">
+                <img class="img-thumbnail" src="images/lakenakuruimg2.jpg" alt="Lake Nakuru image ">
+
+            </div>
+            <div class="content ">
+                <p class="content-body"> Kisite Mpunguti Marine Park is located on the south coast off Shimoni and south
+                    of Wasini Island in Kwale District on the south Kenyan coast near the Tanzanian border.The complex
+                    covers a marine area with four small islands surrounded by coral reef.Kisite island is a small
+                    waterless coral island, 8 km offshore in the Marine Park. Coral platforms around the raised central
+                    portion are exposed at low tide.The three other coral islets in the park (Mpunguti ya Juu, Mpunguti
+                    ya Chini and Liwe la Jahazi) lie closer to the larger Wasini Island, are scrub covered and support
+                    no significant wildlife or birds.The surrounding waters have well developed coral gardens and a
+                    large variety of fish.</p>
 
                 <a href="#demo" data-toggle="collapse">
                     <button class="btn btn-outline-secondary mapbtn">view map</button>
@@ -231,22 +198,33 @@
                     <p> map for the area here....</p>
                 </div>
             </div>
-
         </div>
-
 
     </div>
 
+    <div class="park-wrapper">
+        <h2 class="park-title">Baboon</h2>
+        <div class="d-flex">
+            <div class="content-img destination ">
+                <img class="img-thumbnail" src="images/lakenakuruimg2.jpg" alt="Lake Nakuru image ">
 
+            </div>
+            <div class="content ">
+                <p class="content-body"> Both the park and reserve are the most highly utilized among marine protected
+                    areas. There are various local agents who offer boats for hire to get into the Marine Park. There
+                    are quite a good number of companies offering water sports facilities. These firms are spread along
+                    the beach. The place is ideal for diving.
+                    Diving gear is readily available from water sports desks at the hotels in Mombasa</p>
 
+                <a href="#demo" data-toggle="collapse">
+                    <button class="btn btn-outline-secondary mapbtn">view map</button>
+                </a>
+                <div id="demo" class="collapse mt-3">
+                    <p> map for the area here....</p>
+                </div>
+            </div>
+        </div>
 
-
-
-
-
-
-
-
+    </div>
 
 @endsection
-

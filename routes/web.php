@@ -14,21 +14,29 @@
 
 use Illuminate\Support\Facades\Auth;
 
-Route::get('/', function () {
-    return view('flash');
-});
+Route::get('/', 'HomepageController@index');
+Route::get('/home', 'HomepageController@index');
+
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/index', 'HomepageController@index')->name('home');
 Route::get('/admin', 'AdminController@index')->name('admin.index');
+Route::get('/admin/editHome', 'HomepageController@editHome');
+Route::post('/intro/store', 'HomepageController@store');
+Route::post('/details/store', 'admincontroller@store');
+Route::get('/details/show', 'admincontroller@show');
+
+
 //routes for destinations
-Route::view('/destinations', 'destinations.index')->name('destinations.index');
+Route::get('/destinations', 'DestinationsController@index');
 Route::view('/historic_sites', 'destinations.historicSites.index');
 Route::view('/nationalParks', 'destinations.nationalparks.index');
 Route::view('/marineParks', 'destinations.marineParks.index');
 Route::view('/conservancy', 'destinations.conservancy.index');
 Route::view('/wildlife', 'destinations.wildlife.index');
+Route::view('/forests', 'destinations.forests.index');
 
 
 //routes for things to do
@@ -53,12 +61,21 @@ Route::view('/golf/sigonagolf', 'things_to_do.golf.sigonagolfclub');
 Route::view('/golf/vipingogolf', 'things_to_do.golf.vipingogolfcourse');
 Route::view('/golf/windsorgolf', 'things_to_do.golf.windsorgolfcourse');
 
+//watersport
+
+Route::view('/watersports/watersport', 'things_to_do.watersports.whiteWaterSport');
+Route::view('/watersports/diving', 'things_to_do.watersports.Diving');
+Route::view('/watersports/kitesurfing', 'things_to_do.watersports.kiteSurfing');
+
 
 // routes of national parks
 Route::view('/nationalParks/amboseli', 'destinations.nationalparks.amboseliNationalPark');
 Route::view('/nationalParks/nairobiNationalPark', 'destinations.nationalparks.nairobiNationalPark');
 Route::view('/lnakurupark', 'destinations.nationalparks.lakeNakuruNationalPark');
 Route::view('/lturkanapark', 'destinations.nationalparks.lakeTurkanaNationalPark');
+
+
+
 
 
 Route::view('/accomodation', 'accomodation.accomodation');

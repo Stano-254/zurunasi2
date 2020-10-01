@@ -38,7 +38,7 @@
 
 @section('content')
 
-    <div class="row justify-content-center">
+    <div class="row justify-content-center pt-2">
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">Dashboard</div>
@@ -50,7 +50,19 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    <div class="d-flex p-4">
+                        <div class="card p-1 m-1 text-center col-6">
+                            <i class="align-content-center fa fa-home "></i>
+                            <p><a href="/admin/editHome">edit home page</a></p>
+                        </div>
+                        <div class="card p-1 m-1 ">
+                            <i class="fa-fa user"></i>
+                            <p>edit home page</p>
+                        </div>
+                        <div class="card p-1 m-1">
+                            <p>edit home page</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

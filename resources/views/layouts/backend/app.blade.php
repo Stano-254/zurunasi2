@@ -24,7 +24,7 @@
 <div id="app">
     @include('layouts.backend.nav')
 
-    <main class="py-2">
+    <main class="py-5">
         <div class="container-fluid">
             @yield('content')
         </div>

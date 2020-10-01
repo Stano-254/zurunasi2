@@ -21,7 +21,7 @@
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
                 <div class="nav-item">
-                    <a class="nav-link" href="{{'/home'}}"><span class="home fa fa-home"></span></a>
+                    <a class="nav-link" href="{{'/'}}"><span class="home fa fa-home"></span></a>
                 </div>
                 <div class="dropdown nav-item">
 
@@ -41,6 +41,8 @@
                         <li><a class="nav-link" href="{{'/wildlife'}}">Big-five Wildlife</a></li>
                         <hr class="nav-hr">
                         <li><a class="nav-link" href="{{'/conservancy'}}">Conservancies</a></li>
+                        <hr class="nav-hr">
+                        <li><a class="nav-link" href="{{'/forests'}}">Forests</a></li>
 
                     </ul>
 
